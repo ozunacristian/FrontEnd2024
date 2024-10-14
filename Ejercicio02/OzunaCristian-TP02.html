@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Formulario</title>
+</head>
+<!--
+Trabajo Práctico Nº2
+Alumno: Ozuna Cristian
+-->
+<body>
+  <h1>Formulario de postulación a empleo</h1>
+  <form action="#" method="get">
+    <fieldset>
+      <legend>Información personal</legend>
+      <label for="nombre">Nombre: </label>
+      <input type="text" id="nombre" name="nombre">
+      <br>
+      <br>
+      <label for="apellido">Apellido: </label>
+      <input type="text" id="apellido" name="apellido">
+      <br>
+      <br>
+      <label for="fechaNacimiento">Fecha de nacimiento: </label>
+      <input type="date" id="fechaNacimiento" name="nacimiento">
+      <br>
+      <br>
+      <span>Género:</span>
+      <br>
+      <input type="radio" id="genero_masculino" name="genero" value="Masculino">
+      <label for="genero_masculino"> Masculino</label>
+      <br>
+      <input type="radio" id="genero_femenino" name="genero" value="Femenino">
+      <label for="genero_femenino"> Femenino</label>
+    </fieldset>
+
+    <fieldset>
+      <legend>Información de contacto</legend>
+
+      <label for="correo">Correo electrónico: </label>
+      <input type="email" id="correo" name="correo">
+      <br><br>
+      <label for="nro_telefono">Número de teléfono: </label>
+      <input type="number" id="nro_telefono" name="nro_telefono" min="0">
+      <br><br>
+      <label for="direccion">Dirección: </label>
+      <br>
+      <textarea name="direccion" id="direccion" rows="4" cols="50"></textarea>
+    </fieldset>
+
+    <fieldset>
+      <legend>Presentación profesional</legend>
+
+      <label for="comentarios">Cuentenos sobre usted: </label>
+      <br>
+      <textarea name="comentarios" id="comentarios" rows="5" cols="100"></textarea>
+      <br><br>
+
+      <span>Nivel de estudios alcanzados: </span>
+      <br>
+      <input type="radio" id="primario" name="estudios" value="Primerio">
+      <label for="primario"> Primario</label>
+      <br>
+      <input type="radio" id="secundario" name="estudios" value="Secundario">
+      <label for="secundario"> Secundario</label>
+      <br>
+      <input type="radio" id="universitario" name="estudios" value="Universitario">
+      <label for="universitario"> Universitario</label>
+      <br>
+      <input type="radio" id="posgrado" name="estudios" value="Posgrado">
+      <label for="posgrado"> Posgrado</label>
+      <br><br>
+      <span>Lenguajes en los que posee conocimientos: </span>
+      <br>
+      <label for="opcion01"><input type="checkbox" id="opcion01" name="conoce" value="JavaScript"> JavaScript</label>
+      <br>
+      <label for="opcion02"><input type="checkbox" id="opcion02" name="conoce" value="HTML"> HTML</label>
+      <br>
+      <label for="opcion03"><input type="checkbox" id="opcion03" name="conoce" value="CSS"> CSS</label>
+      <br>
+      <label for="opcion04"><input type="checkbox" id="opcion04" name="conoce" value="PHP"> PHP</label>
+      <br>
+      <label for="opcion05"><input type="checkbox" id="opcion05" name="conoce" value="NodeJS"> NodeJS</label>
+      <br>
+      <label for="opcion06"><input type="checkbox" id="opcion06" name="conoce" value="Python"> Python</label>
+      <br>
+      <label for="opcion07"><input type="checkbox" id="opcion07" name="conoce" value="C#"> C#</label>
+      <br><br>
+      <label for="lenguaje">Seleccione un Lenguaje favorito: </label>
+      <select id="lenguaje" name="lenguajeFavorito">
+        <option value="JavaScript">JavaScript</option>
+        <option value="HTML">HTML</option>
+        <option value="CSS">CSS</option>
+        <option value="PHP">PHP</option>
+        <option value="NodeJS">NodeJS</option>
+        <option value="Python">Python</option>
+        <option value="C#">C#</option>
+      </select>
+    </fieldset>
+    <br><br>
+    <input id="terminosCondiciones" type="checkbox" required><label for="terminosCondiciones">Acepto los términos y condiciones.</label>
+    <br><br>
+    <button type="submit">Registrarse</button>
+  </form>
+</body>
+</html>
